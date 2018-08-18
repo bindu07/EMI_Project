@@ -1,0 +1,10 @@
+{
+  "dbName": "msmartEu",
+  "dbUsername": "root",
+  "dbPassword": "r00t",
+  "dbHost": "localhost",
+  "dbPort": "5432",
+  "dbDialect": "postgres",
+  "apiPort": 50001,
+  "runMode": "dev"
+}

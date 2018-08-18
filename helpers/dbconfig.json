@@ -1,0 +1,10 @@
+{
+  "dbName": "emi_project",
+  "dbDevName": "msmartEu1",
+  "dbTestName": "msmartEuSSU",
+  "dbUsername": "root",
+  "devlocalPassword": "r00t",
+  "devdbPassword": "mroot",
+  "testdbPassword": "r00t",
+  "dbHostName": "localhost"
+}

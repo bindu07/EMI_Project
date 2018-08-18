@@ -1,0 +1,56 @@
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-17T09:56:03.760Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-17T09:56:03.762Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-17T09:56:03.764Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-17T09:56:03.764Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-17T09:56:29.860Z"}
+{"level":"info","message":"/getOneConsumerBillDetails/agency/125125/consumer/8575","timestamp":"2018-08-17T09:56:29.861Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-17T09:56:29.863Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-17T09:56:29.863Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-17T09:56:29.864Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-17T09:56:29.865Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-17T09:56:29.865Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-17T09:56:29.865Z"}
+{"level":"info","message":"true","timestamp":"2018-08-17T09:56:29.867Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-17T09:56:29.868Z"}
+{"level":"error","message":"(node:13512) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-17T09:56:29.870Z"}
+{"level":"error","message":"Error: Cannot find module '../helpers/express/sendJSONResponse.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj\\NodeSample\\config\\main.js:57:2)\n    at C:\\Users\\Admin\\BinduProj\\NodeSample\\config\\main.js:46:3\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Admin\\BinduProj\\NodeSample\\node_modules\\express\\lib\\router\\index.js:335:12)","timestamp":"2018-08-17T09:56:29.876Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-17T10:02:19.778Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-17T10:02:19.781Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-17T10:02:19.783Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-17T10:02:19.784Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-17T10:02:26.928Z"}
+{"level":"info","message":"/getOneConsumerBillDetails/agency/125125/consumer/8575","timestamp":"2018-08-17T10:02:26.929Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-17T10:02:26.931Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-17T10:02:26.931Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-17T10:02:26.932Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-17T10:02:26.933Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-17T10:02:26.933Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-17T10:02:26.933Z"}
+{"level":"info","message":"true","timestamp":"2018-08-17T10:02:26.937Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-17T10:02:26.938Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-17T10:02:27.071Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-17T10:02:27.096Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-17T10:02:27.600Z"}
+{"level":"info","message":"SELECT TBD.bill_id,TBD.consumer_account_number,TBD.consumption_months,TBD.payment_status,TBD.current_month_amount,TBD.arrears,TBD.delayed_payment_charges,TBD.total_bill,TBD.due_date,TBD.bill_after_due_date,TBD.bill_modified,TBD.bill_status,TBD.bill_month,TBD.revised_total_bill,CA.average_consumption,CA.connection_type,CA.pipe_diameter,CA.previous_reading,U.agency_id,CONCAT(U.first_name,' ',U.last_name) as username,AG.name as agency_name,U.mobile_number,U.address_line_1,U.address_line_2,U.city,U.pin_code,CA.sub_division_id as consumer_sub_division_id FROM temp_bill_details as TBD LEFT JOIN agencies as AG ON AG.id = TBD.agency_id LEFT JOIN consumer_accounts as CA ON CA.consumer_account_number = TBD.consumer_account_number LEFT JOIN users as U ON U.user_id = CA.user_id LEFT JOIN states as S ON U.state_id = S.id LEFT JOIN countries as C ON S.country_id = C.id WHERE TBD.agency_id = 125125 AND TBD.consumer_account_number = '8575' AND TBD.payment_status != '' AND TBD.bill_status != '' order by TBD.bill_id DESC","timestamp":"2018-08-17T10:02:27.805Z"}
+{"level":"error","message":"(node:2060) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-17T10:02:27.807Z"}
+{"level":"info","message":"Error in connecting with database","timestamp":"2018-08-17T10:02:28.426Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-17T10:23:19.416Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-17T10:23:19.417Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-17T10:23:19.419Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-17T10:23:19.419Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-17T10:23:23.031Z"}
+{"level":"info","message":"/getOneConsumerBillDetails/agency/125125/consumer/8575","timestamp":"2018-08-17T10:23:23.032Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-17T10:23:23.034Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-17T10:23:23.034Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-17T10:23:23.035Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-17T10:23:23.037Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-17T10:23:23.037Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-17T10:23:23.037Z"}
+{"level":"info","message":"true","timestamp":"2018-08-17T10:23:23.039Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-17T10:23:23.045Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-17T10:23:23.197Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-17T10:23:23.236Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-17T10:23:23.794Z"}
+{"level":"info","message":"SELECT TBD.bill_id,TBD.consumer_account_number,TBD.consumption_months,TBD.payment_status,TBD.current_month_amount,TBD.arrears,TBD.delayed_payment_charges,TBD.total_bill,TBD.due_date,TBD.bill_after_due_date,TBD.bill_modified,TBD.bill_status,TBD.bill_month,TBD.revised_total_bill,CA.average_consumption,CA.connection_type,CA.pipe_diameter,CA.previous_reading,U.agency_id,CONCAT(U.first_name,' ',U.last_name) as username,AG.name as agency_name,U.mobile_number,U.address_line_1,U.address_line_2,U.city,U.pin_code,CA.sub_division_id as consumer_sub_division_id FROM temp_bill_details as TBD LEFT JOIN agencies as AG ON AG.id = TBD.agency_id LEFT JOIN consumer_accounts as CA ON CA.consumer_account_number = TBD.consumer_account_number LEFT JOIN users as U ON U.user_id = CA.user_id LEFT JOIN states as S ON U.state_id = S.id LEFT JOIN countries as C ON S.country_id = C.id WHERE TBD.agency_id = 125125 AND TBD.consumer_account_number = '8575' AND TBD.payment_status != '' AND TBD.bill_status != '' order by TBD.bill_id DESC","timestamp":"2018-08-17T10:23:24.009Z"}
+{"level":"error","message":"(node:17476) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-17T10:23:24.011Z"}
+{"level":"info","message":"Error in connecting with database","timestamp":"2018-08-17T10:23:24.070Z"}

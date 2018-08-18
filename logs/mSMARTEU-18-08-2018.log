@@ -1,0 +1,640 @@
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T04:59:14.491Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T04:59:14.493Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T04:59:14.511Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T04:59:14.511Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T05:50:04.470Z"}
+{"level":"info","message":"/getOneConsumerBillDetails/agency/125125/consumer/8575","timestamp":"2018-08-18T05:50:04.474Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T05:50:04.538Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T05:50:04.539Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T05:50:04.556Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T05:50:04.560Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T05:50:04.561Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T05:50:04.561Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T05:50:04.568Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T05:50:04.600Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T05:50:05.802Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T05:50:06.205Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T05:50:11.235Z"}
+{"level":"info","message":"SELECT TBD.bill_id,TBD.consumer_account_number,TBD.consumption_months,TBD.payment_status,TBD.current_month_amount,TBD.arrears,TBD.delayed_payment_charges,TBD.total_bill,TBD.due_date,TBD.bill_after_due_date,TBD.bill_modified,TBD.bill_status,TBD.bill_month,TBD.revised_total_bill,CA.average_consumption,CA.connection_type,CA.pipe_diameter,CA.previous_reading,U.agency_id,CONCAT(U.first_name,' ',U.last_name) as username,AG.name as agency_name,U.mobile_number,U.address_line_1,U.address_line_2,U.city,U.pin_code,CA.sub_division_id as consumer_sub_division_id FROM temp_bill_details as TBD LEFT JOIN agencies as AG ON AG.id = TBD.agency_id LEFT JOIN consumer_accounts as CA ON CA.consumer_account_number = TBD.consumer_account_number LEFT JOIN users as U ON U.user_id = CA.user_id LEFT JOIN states as S ON U.state_id = S.id LEFT JOIN countries as C ON S.country_id = C.id WHERE TBD.agency_id = 125125 AND TBD.consumer_account_number = '8575' AND TBD.payment_status != '' AND TBD.bill_status != '' order by TBD.bill_id DESC","timestamp":"2018-08-18T05:50:13.777Z"}
+{"level":"error","message":"(node:6516) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T05:50:13.784Z"}
+{"level":"info","message":"Error in connecting with database","timestamp":"2018-08-18T05:50:14.018Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T06:01:29.599Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T06:01:29.601Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T06:01:29.603Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T06:01:29.603Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T06:01:34.261Z"}
+{"level":"info","message":"/getOneConsumerBillDetails/agency/125125/consumer/8575","timestamp":"2018-08-18T06:01:34.262Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T06:01:34.263Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T06:01:34.264Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T06:01:34.266Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T06:01:34.268Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T06:01:34.269Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T06:01:34.269Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T06:01:34.271Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T06:01:34.273Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T06:01:34.423Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T06:01:34.449Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T06:01:35.306Z"}
+{"level":"info","message":"SELECT TBD.bill_id,TBD.consumer_account_number,TBD.consumption_months,TBD.payment_status,TBD.current_month_amount,TBD.arrears,TBD.delayed_payment_charges,TBD.total_bill,TBD.due_date,TBD.bill_after_due_date,TBD.bill_modified,TBD.bill_status,TBD.bill_month,TBD.revised_total_bill,CA.average_consumption,CA.connection_type,CA.pipe_diameter,CA.previous_reading,U.agency_id,CONCAT(U.first_name,' ',U.last_name) as username,AG.name as agency_name,U.mobile_number,U.address_line_1,U.address_line_2,U.city,U.pin_code,CA.sub_division_id as consumer_sub_division_id FROM temp_bill_details as TBD LEFT JOIN agencies as AG ON AG.id = TBD.agency_id LEFT JOIN consumer_accounts as CA ON CA.consumer_account_number = TBD.consumer_account_number LEFT JOIN users as U ON U.user_id = CA.user_id LEFT JOIN states as S ON U.state_id = S.id LEFT JOIN countries as C ON S.country_id = C.id WHERE TBD.agency_id = 125125 AND TBD.consumer_account_number = '8575' AND TBD.payment_status != '' AND TBD.bill_status != '' order by TBD.bill_id DESC","timestamp":"2018-08-18T06:01:35.531Z"}
+{"level":"error","message":"(node:2768) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T06:01:35.533Z"}
+{"level":"info","message":"Error in connecting with database","timestamp":"2018-08-18T06:01:35.557Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T06:02:28.193Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T06:02:28.195Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T06:02:28.197Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T06:02:28.197Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T06:02:32.395Z"}
+{"level":"info","message":"/getOneConsumerBillDetails/agency/125125/consumer/8575","timestamp":"2018-08-18T06:02:32.396Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T06:02:32.399Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T06:02:32.399Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T06:02:32.400Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T06:02:32.402Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T06:02:32.402Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T06:02:32.402Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T06:02:32.404Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T06:02:32.405Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T06:02:32.570Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T06:02:32.595Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T06:02:33.085Z"}
+{"level":"info","message":"SELECT TBD.bill_id,TBD.consumer_account_number,TBD.consumption_months,TBD.payment_status,TBD.current_month_amount,TBD.arrears,TBD.delayed_payment_charges,TBD.total_bill,TBD.due_date,TBD.bill_after_due_date,TBD.bill_modified,TBD.bill_status,TBD.bill_month,TBD.revised_total_bill,CA.average_consumption,CA.connection_type,CA.pipe_diameter,CA.previous_reading,U.agency_id,CONCAT(U.first_name,' ',U.last_name) as username,AG.name as agency_name,U.mobile_number,U.address_line_1,U.address_line_2,U.city,U.pin_code,CA.sub_division_id as consumer_sub_division_id FROM temp_bill_details as TBD LEFT JOIN agencies as AG ON AG.id = TBD.agency_id LEFT JOIN consumer_accounts as CA ON CA.consumer_account_number = TBD.consumer_account_number LEFT JOIN users as U ON U.user_id = CA.user_id LEFT JOIN states as S ON U.state_id = S.id LEFT JOIN countries as C ON S.country_id = C.id WHERE TBD.agency_id = 125125 AND TBD.consumer_account_number = '8575' AND TBD.payment_status != '' AND TBD.bill_status != '' order by TBD.bill_id DESC","timestamp":"2018-08-18T06:02:33.295Z"}
+{"level":"error","message":"(node:17076) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T06:02:33.296Z"}
+{"level":"info","message":"Error in connecting with database","timestamp":"2018-08-18T06:02:33.417Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T06:02:54.385Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T06:02:54.387Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T06:02:54.389Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T06:02:54.390Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T06:02:58.018Z"}
+{"level":"info","message":"/getOneConsumerBillDetails/agency/125125/consumer/8575","timestamp":"2018-08-18T06:02:58.020Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T06:02:58.029Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T06:02:58.030Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T06:02:58.058Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T06:02:58.058Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T06:02:58.059Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T06:02:58.059Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T06:02:58.061Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T06:02:58.062Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T06:02:58.181Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T06:02:58.204Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T06:02:58.671Z"}
+{"level":"info","message":"SELECT TBD.bill_id,TBD.consumer_account_number,TBD.consumption_months,TBD.payment_status,TBD.current_month_amount,TBD.arrears,TBD.delayed_payment_charges,TBD.total_bill,TBD.due_date,TBD.bill_after_due_date,TBD.bill_modified,TBD.bill_status,TBD.bill_month,TBD.revised_total_bill,CA.average_consumption,CA.connection_type,CA.pipe_diameter,CA.previous_reading,U.agency_id,CONCAT(U.first_name,' ',U.last_name) as username,AG.name as agency_name,U.mobile_number,U.address_line_1,U.address_line_2,U.city,U.pin_code,CA.sub_division_id as consumer_sub_division_id FROM temp_bill_details as TBD LEFT JOIN agencies as AG ON AG.id = TBD.agency_id LEFT JOIN consumer_accounts as CA ON CA.consumer_account_number = TBD.consumer_account_number LEFT JOIN users as U ON U.user_id = CA.user_id LEFT JOIN states as S ON U.state_id = S.id LEFT JOIN countries as C ON S.country_id = C.id WHERE TBD.agency_id = 125125 AND TBD.consumer_account_number = '8575' AND TBD.payment_status != '' AND TBD.bill_status != '' order by TBD.bill_id DESC","timestamp":"2018-08-18T06:02:58.861Z"}
+{"level":"error","message":"(node:3124) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T06:02:58.863Z"}
+{"level":"info","message":"Error in connecting with database","timestamp":"2018-08-18T06:02:59.132Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T06:03:19.313Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T06:03:19.315Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T06:03:19.317Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T06:03:19.318Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T06:03:23.333Z"}
+{"level":"info","message":"/getOneConsumerBillDetails/agency/125125/consumer/8575","timestamp":"2018-08-18T06:03:23.334Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T06:03:23.336Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T06:03:23.336Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T06:03:23.338Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T06:03:23.339Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T06:03:23.339Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T06:03:23.340Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T06:03:23.341Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T06:03:23.343Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T06:03:23.504Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T06:03:23.528Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T06:03:24.023Z"}
+{"level":"info","message":"SELECT TBD.bill_id,TBD.consumer_account_number,TBD.consumption_months,TBD.payment_status,TBD.current_month_amount,TBD.arrears,TBD.delayed_payment_charges,TBD.total_bill,TBD.due_date,TBD.bill_after_due_date,TBD.bill_modified,TBD.bill_status,TBD.bill_month,TBD.revised_total_bill,CA.average_consumption,CA.connection_type,CA.pipe_diameter,CA.previous_reading,U.agency_id,CONCAT(U.first_name,' ',U.last_name) as username,AG.name as agency_name,U.mobile_number,U.address_line_1,U.address_line_2,U.city,U.pin_code,CA.sub_division_id as consumer_sub_division_id FROM temp_bill_details as TBD LEFT JOIN agencies as AG ON AG.id = TBD.agency_id LEFT JOIN consumer_accounts as CA ON CA.consumer_account_number = TBD.consumer_account_number LEFT JOIN users as U ON U.user_id = CA.user_id LEFT JOIN states as S ON U.state_id = S.id LEFT JOIN countries as C ON S.country_id = C.id WHERE TBD.agency_id = 125125 AND TBD.consumer_account_number = '8575' AND TBD.payment_status != '' AND TBD.bill_status != '' order by TBD.bill_id DESC","timestamp":"2018-08-18T06:03:24.329Z"}
+{"level":"error","message":"(node:17152) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T06:03:24.332Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T06:03:24.582Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T06:55:10.456Z"}
+{"level":"info","message":"/getUserDetailsById/777","timestamp":"2018-08-18T06:55:10.458Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T06:55:10.460Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T06:55:10.460Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T06:55:10.461Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T06:55:10.461Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T06:55:10.461Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T06:55:10.462Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T06:55:10.463Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T06:56:20.460Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T06:56:20.461Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T06:56:20.463Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T06:56:20.463Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T06:56:24.724Z"}
+{"level":"info","message":"/getUserDetailsById/777","timestamp":"2018-08-18T06:56:24.725Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T06:56:24.727Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T06:56:24.728Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T06:56:24.729Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T06:56:24.730Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T06:56:24.730Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T06:56:24.731Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T06:56:24.733Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T06:56:24.734Z"}
+{"level":"error","message":"(node:16544) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T06:56:24.767Z"}
+{"level":"error","message":"SyntaxError: C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\helpers\\dbconfig.json: Unexpected token / in JSON at position 30\n    at JSON.parse (<anonymous>)\n    at Object.Module._extensions..json (internal/modules/cjs/loader.js:721:27)\n    at Module.load (internal/modules/cjs/loader.js:612:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:543:3)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\database.js:2:17)\n    at Module._compile (internal/modules/cjs/loader.js:702:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)","timestamp":"2018-08-18T06:56:24.775Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T06:56:56.471Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T06:56:56.473Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T06:56:56.475Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T06:56:56.475Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T06:57:01.745Z"}
+{"level":"info","message":"/getUserDetailsById/777","timestamp":"2018-08-18T06:57:01.747Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T06:57:01.748Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T06:57:01.749Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T06:57:01.750Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T06:57:01.751Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T06:57:01.751Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T06:57:01.752Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T06:57:01.754Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T06:57:01.755Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T06:57:02.533Z"}
+{"level":"error","message":"(node:2184) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T06:57:02.535Z"}
+{"level":"error","message":"Error: Cannot find module '.api/userDetails/getUserDetailsById.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at routes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\Routes.js:11:5)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:62:25)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:46:3\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","timestamp":"2018-08-18T06:57:02.544Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T06:57:02.590Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T07:01:29.759Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T07:01:29.760Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T07:01:29.762Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T07:01:29.763Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:01:35.740Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-18T07:01:35.742Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:01:35.745Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:01:35.745Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:01:35.766Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:01:35.767Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:01:35.767Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:01:35.767Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:01:35.769Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:01:35.770Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:01:35.915Z"}
+{"level":"error","message":"(node:8100) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T07:01:35.918Z"}
+{"level":"error","message":"Error: Cannot find module '.api/userDetails/getUserDetailsById.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at routes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\Routes.js:11:5)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:62:25)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:46:3\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","timestamp":"2018-08-18T07:01:35.926Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T07:01:35.934Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:03:49.759Z"}
+{"level":"info","message":"/userDetails/getUserDetailsById.js&","timestamp":"2018-08-18T07:03:49.760Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:03:49.760Z"}
+{"meta":false,"level":"info","message":"","timestamp":"2018-08-18T07:03:49.761Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:04:37.056Z"}
+{"level":"info","message":"/userDetails/getUserDetailsById","timestamp":"2018-08-18T07:04:37.056Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:04:37.057Z"}
+{"meta":false,"level":"info","message":"","timestamp":"2018-08-18T07:04:37.057Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:04:37.529Z"}
+{"level":"info","message":"/userDetails/getUserDetailsById","timestamp":"2018-08-18T07:04:37.530Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:04:37.530Z"}
+{"meta":false,"level":"info","message":"","timestamp":"2018-08-18T07:04:37.530Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:05:04.033Z"}
+{"level":"info","message":"/getOneConsumerBillDetails/agency/125125/consumer/8575","timestamp":"2018-08-18T07:05:04.034Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:05:04.034Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:05:04.035Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:05:04.035Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:05:04.036Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:05:04.036Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:05:04.037Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:05:04.038Z"}
+{"level":"error","message":"Error: Cannot find module '.api/userDetails/getUserDetailsById.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at routes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\Routes.js:11:5)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:62:25)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:46:3\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","timestamp":"2018-08-18T07:05:04.041Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:05:11.250Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-18T07:05:11.251Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:05:11.251Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:05:11.252Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:05:11.252Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:05:11.252Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:05:11.253Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:05:11.253Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:05:11.254Z"}
+{"level":"error","message":"Error: Cannot find module '.api/userDetails/getUserDetailsById.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at routes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\Routes.js:11:5)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:62:25)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:46:3\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","timestamp":"2018-08-18T07:05:11.257Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:05:16.448Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-18T07:05:16.448Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:05:16.449Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:05:16.449Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:05:16.450Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:05:16.450Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:05:16.450Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:05:16.451Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:05:16.451Z"}
+{"level":"error","message":"Error: Cannot find module '.api/userDetails/getUserDetailsById.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at routes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\Routes.js:11:5)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:62:25)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:46:3\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","timestamp":"2018-08-18T07:05:16.455Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:06:29.596Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-18T07:06:29.597Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:06:29.597Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:06:29.598Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:06:29.598Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:06:29.598Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:06:29.599Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:06:29.600Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:06:29.601Z"}
+{"level":"error","message":"Error: Cannot find module '.api/userDetails/getUserDetailsById.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at routes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\Routes.js:11:5)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:62:25)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:46:3\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","timestamp":"2018-08-18T07:06:29.604Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:06:37.814Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-18T07:06:37.814Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:06:37.815Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:06:37.815Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:06:37.816Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:06:37.816Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:06:37.816Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:06:37.817Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:06:37.817Z"}
+{"level":"error","message":"Error: Cannot find module '.api/userDetails/getUserDetailsById.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at routes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\Routes.js:11:5)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:62:25)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:46:3\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","timestamp":"2018-08-18T07:06:37.820Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:06:44.077Z"}
+{"level":"info","message":"/getUserDetailsById/777","timestamp":"2018-08-18T07:06:44.078Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:06:44.078Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:06:44.078Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:06:44.079Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:06:44.079Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:06:44.079Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:06:44.080Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:06:44.080Z"}
+{"level":"error","message":"Error: Cannot find module '.api/userDetails/getUserDetailsById.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at routes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\Routes.js:11:5)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:62:25)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:46:3\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","timestamp":"2018-08-18T07:06:44.083Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:06:52.780Z"}
+{"level":"info","message":"/getUserDetailsById/777","timestamp":"2018-08-18T07:06:52.780Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:06:52.781Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:06:52.781Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:06:52.781Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:06:52.782Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:06:52.782Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:06:52.782Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:06:52.783Z"}
+{"level":"error","message":"Error: Cannot find module '.api/userDetails/getUserDetailsById.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at routes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\Routes.js:11:5)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:62:25)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:46:3\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","timestamp":"2018-08-18T07:06:52.785Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:06:57.214Z"}
+{"level":"info","message":"/getUserDetailsById/777","timestamp":"2018-08-18T07:06:57.215Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:06:57.216Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:06:57.216Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:06:57.217Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:06:57.217Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:06:57.218Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:06:57.218Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:06:57.219Z"}
+{"level":"error","message":"Error: Cannot find module '.api/userDetails/getUserDetailsById.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at routes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\Routes.js:11:5)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:62:25)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:46:3\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","timestamp":"2018-08-18T07:06:57.223Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:07:06.993Z"}
+{"level":"info","message":"/userDetails/getUserDetailsById","timestamp":"2018-08-18T07:07:06.994Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:07:06.994Z"}
+{"meta":false,"level":"info","message":"","timestamp":"2018-08-18T07:07:06.995Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T07:08:15.784Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T07:08:15.786Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T07:08:15.788Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T07:08:15.788Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:08:19.992Z"}
+{"level":"info","message":"/userDetails/getUserDetailsById","timestamp":"2018-08-18T07:08:19.993Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:08:19.996Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:08:19.997Z"}
+{"meta":false,"level":"info","message":"","timestamp":"2018-08-18T07:08:19.999Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:09:01.789Z"}
+{"level":"info","message":"/userDetails/getUserDetailsById","timestamp":"2018-08-18T07:09:01.789Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:09:01.790Z"}
+{"meta":false,"level":"info","message":"","timestamp":"2018-08-18T07:09:01.790Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:09:07.004Z"}
+{"level":"info","message":"/getUserDetailsById/777","timestamp":"2018-08-18T07:09:07.005Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:09:07.005Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:09:07.006Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:09:07.007Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:09:07.007Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:09:07.009Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:09:07.012Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:09:07.014Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:09:07.155Z"}
+{"level":"error","message":"(node:11308) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T07:09:07.157Z"}
+{"level":"error","message":"Error: Cannot find module '.api/userDetails/getUserDetailsById.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at routes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\Routes.js:11:5)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:62:25)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:46:3\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","timestamp":"2018-08-18T07:09:07.166Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T07:09:07.179Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T07:28:29.402Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T07:28:29.404Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T07:28:29.406Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T07:28:29.407Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:28:35.535Z"}
+{"level":"info","message":"/getOneConsumerBillDetails/agency/125125/consumer/8575","timestamp":"2018-08-18T07:28:35.535Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:28:35.537Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:28:35.538Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:28:35.539Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:28:35.540Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:28:35.540Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:28:35.540Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:28:35.542Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:28:35.544Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:28:35.692Z"}
+{"level":"error","message":"(node:2708) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T07:28:35.694Z"}
+{"level":"error","message":"Error: Cannot find module '.api/userDetails/getUserDetailsById.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at routes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\Routes.js:11:5)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:62:25)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:46:3\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","timestamp":"2018-08-18T07:28:35.703Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T07:28:35.712Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T07:30:04.046Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T07:30:04.048Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T07:30:04.050Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T07:30:04.050Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:30:07.674Z"}
+{"level":"info","message":"/getOneConsumerBillDetails/agency/125125/consumer/8575","timestamp":"2018-08-18T07:30:07.675Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:30:07.676Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:30:07.677Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:30:07.677Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:30:07.678Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:30:07.678Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:30:07.678Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:30:07.680Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:30:07.681Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:30:07.805Z"}
+{"level":"error","message":"(node:9984) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T07:30:07.809Z"}
+{"level":"error","message":"Error: Cannot find module '.api/userDetails/getUserDetailsById.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at routes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\Routes.js:15:5)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:62:25)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:46:3\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","timestamp":"2018-08-18T07:30:07.814Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T07:30:07.825Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T07:31:15.448Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T07:31:15.450Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T07:31:15.452Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T07:31:15.452Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:31:18.289Z"}
+{"level":"info","message":"/getOneConsumerBillDetails/agency/125125/consumer/8575","timestamp":"2018-08-18T07:31:18.290Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:31:18.293Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:31:18.293Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:31:18.295Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:31:18.296Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:31:18.296Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:31:18.297Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:31:18.299Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:31:18.301Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:31:18.422Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T07:31:18.521Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T07:31:20.664Z"}
+{"level":"info","message":"SELECT TBD.bill_id,TBD.consumer_account_number,TBD.consumption_months,TBD.payment_status,TBD.current_month_amount,TBD.arrears,TBD.delayed_payment_charges,TBD.total_bill,TBD.due_date,TBD.bill_after_due_date,TBD.bill_modified,TBD.bill_status,TBD.bill_month,TBD.revised_total_bill,CA.average_consumption,CA.connection_type,CA.pipe_diameter,CA.previous_reading,U.agency_id,CONCAT(U.first_name,' ',U.last_name) as username,AG.name as agency_name,U.mobile_number,U.address_line_1,U.address_line_2,U.city,U.pin_code,CA.sub_division_id as consumer_sub_division_id FROM temp_bill_details as TBD LEFT JOIN agencies as AG ON AG.id = TBD.agency_id LEFT JOIN consumer_accounts as CA ON CA.consumer_account_number = TBD.consumer_account_number LEFT JOIN users as U ON U.user_id = CA.user_id LEFT JOIN states as S ON U.state_id = S.id LEFT JOIN countries as C ON S.country_id = C.id WHERE TBD.agency_id = 125125 AND TBD.consumer_account_number = '8575' AND TBD.payment_status != '' AND TBD.bill_status != '' order by TBD.bill_id DESC","timestamp":"2018-08-18T07:31:21.491Z"}
+{"level":"error","message":"(node:1500) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T07:31:21.493Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T07:31:21.502Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:35:27.743Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-18T07:35:27.743Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:35:27.744Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:35:27.744Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:35:27.745Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:35:27.746Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:35:27.746Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:35:27.747Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:35:27.747Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T07:35:40.021Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T07:35:40.023Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T07:35:40.025Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T07:35:40.025Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:35:42.941Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-18T07:35:42.941Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:35:42.943Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:35:42.943Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:35:42.944Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:35:42.945Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:35:42.945Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:35:42.945Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:35:42.947Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:35:42.948Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:35:43.103Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T07:35:43.132Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T07:35:43.774Z"}
+{"level":"error","message":"(node:8520) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T07:35:44.135Z"}
+{"level":"error","message":"ReferenceError: getUserById is not defined\n    at getUserDetailsById (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:21:16)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3880:24\n    at replenish (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1011:17)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1016:9\n    at eachOfLimit (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1041:24)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1046:16\n    at _parallel (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3879:5)\n    at Object.series (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:4735:5)\n    at get (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:14:9)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:52:2\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:275:10)","timestamp":"2018-08-18T07:35:44.140Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T07:35:44.150Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T07:58:44.774Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T07:58:44.777Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T07:58:44.780Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T07:58:44.780Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:58:47.740Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-18T07:58:47.741Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:58:47.759Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:58:47.760Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:58:47.762Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:58:47.763Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:58:47.763Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:58:47.763Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:58:47.765Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:58:47.782Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:58:48.607Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T07:58:48.793Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T07:58:52.619Z"}
+{"level":"error","message":"(node:5208) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T07:58:54.301Z"}
+{"level":"error","message":"ReferenceError: getUserById is not defined\n    at getUserDetailsById (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:21:16)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3880:24\n    at replenish (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1011:17)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1016:9\n    at eachOfLimit (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1041:24)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1046:16\n    at _parallel (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3879:5)\n    at Object.series (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:4735:5)\n    at get (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:14:9)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:52:2\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7\n    at Function.process_params (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:275:10)","timestamp":"2018-08-18T07:58:54.309Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T07:58:54.353Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T07:59:30.321Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T07:59:30.323Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T07:59:30.325Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T07:59:30.325Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T07:59:33.817Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-18T07:59:33.818Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:59:33.820Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T07:59:33.820Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T07:59:33.822Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T07:59:33.823Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:59:33.823Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T07:59:33.823Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T07:59:33.825Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T07:59:33.827Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T07:59:33.943Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T07:59:33.967Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T07:59:34.452Z"}
+{"level":"error","message":"(node:236) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T07:59:34.628Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T07:59:34.636Z"}
+{"message":"ER_NO_SUCH_TABLE: Table 'emi_project.users' doesn't exist","stack":"Error: ER_NO_SUCH_TABLE: Table 'emi_project.users' doesn't exist\n    at Query.Sequence._packetToError (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n    at Query.ErrorPacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:77:18)\n    at Protocol._parsePacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:278:23)\n    at Parser.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:91:28)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:502:10)\n    at Socket.emit (events.js:182:13)\n    at addChunk (_stream_readable.js:283:12)\n    at readableAddChunk (_stream_readable.js:264:11)\n    at Socket.Readable.push (_stream_readable.js:219:10)\n    at TCP.onread (net.js:635:20)\n    --------------------\n    at Protocol._enqueue (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n    at Connection.query (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:200:25)\n    at getUserDetailsById (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:26:7)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3880:24\n    at replenish (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1011:17)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1016:9\n    at eachOfLimit (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1041:24)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1046:16\n    at _parallel (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3879:5)\n    at Object.series (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:4735:5)\n    at get (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:14:9)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:52:2\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","code":"ER_NO_SUCH_TABLE","errno":1146,"sqlMessage":"Table 'emi_project.users' doesn't exist","sqlState":"42S02","index":0,"sql":"SELECT u.user_id,u.password,u.user_name FROM users as u ","level":"info","timestamp":"2018-08-18T07:59:34.656Z"}
+{"level":"info","message":"Error In => getUserDetailsById","timestamp":"2018-08-18T07:59:34.656Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T08:00:00.668Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T08:00:00.669Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T08:00:00.671Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T08:00:00.671Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T08:00:03.667Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-18T08:00:03.667Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T08:00:03.669Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T08:00:03.670Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T08:00:03.671Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T08:00:03.672Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T08:00:03.672Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T08:00:03.672Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T08:00:03.673Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T08:00:03.675Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T08:00:03.907Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T08:00:03.959Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T08:00:04.665Z"}
+{"level":"error","message":"(node:16324) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T08:00:04.848Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T08:00:04.856Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T08:45:23.581Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T08:45:23.583Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T08:45:23.585Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T08:45:23.585Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T08:45:25.900Z"}
+{"level":"info","message":"/getUserDetailsById/777","timestamp":"2018-08-18T08:45:25.901Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T08:45:25.902Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T08:45:25.903Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T08:45:25.904Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T08:45:25.904Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T08:45:25.905Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T08:45:25.905Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T08:45:25.906Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T08:45:25.907Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T08:45:26.040Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T08:45:26.067Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T08:45:26.851Z"}
+{"level":"error","message":"(node:5708) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T08:45:27.097Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T08:45:27.106Z"}
+{"message":"ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'","stack":"Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'\n    at Query.Sequence._packetToError (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n    at Query.ErrorPacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:77:18)\n    at Protocol._parsePacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:278:23)\n    at Parser.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:91:28)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:502:10)\n    at Socket.emit (events.js:182:13)\n    at addChunk (_stream_readable.js:283:12)\n    at readableAddChunk (_stream_readable.js:264:11)\n    at Socket.Readable.push (_stream_readable.js:219:10)\n    at TCP.onread (net.js:635:20)\n    --------------------\n    at Protocol._enqueue (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n    at Connection.query (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:200:25)\n    at getUserDetailsById (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:26:7)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3880:24\n    at replenish (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1011:17)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1016:9\n    at eachOfLimit (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1041:24)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1046:16\n    at _parallel (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3879:5)\n    at Object.series (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:4735:5)\n    at get (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:14:9)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:281:22\n    at param (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:354:14)\n    at param (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at Function.process_params (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:410:3)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:52:2\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)","code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlMessage":"Unknown column 'undefined' in 'where clause'","sqlState":"42S22","index":0,"sql":"SELECT u.user_id,u.password,u.user_name FROM user_details as u  WHERE user_id = undefined","level":"info","timestamp":"2018-08-18T08:45:27.178Z"}
+{"level":"info","message":"Error In => getUserDetailsById","timestamp":"2018-08-18T08:45:27.180Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T08:51:11.157Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T08:51:11.158Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T08:51:11.160Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T08:51:11.160Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T08:51:15.675Z"}
+{"level":"info","message":"/getUserDetailsById/777","timestamp":"2018-08-18T08:51:15.676Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T08:51:15.677Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T08:51:15.677Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T08:51:15.678Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T08:51:15.679Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T08:51:15.680Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T08:51:15.680Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T08:51:15.681Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T08:51:15.682Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T08:51:15.793Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T08:51:15.817Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T08:51:16.466Z"}
+{"level":"error","message":"(node:7576) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T08:51:16.683Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T08:51:16.690Z"}
+{"message":"ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'","stack":"Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'\n    at Query.Sequence._packetToError (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n    at Query.ErrorPacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:77:18)\n    at Protocol._parsePacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:278:23)\n    at Parser.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:91:28)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:502:10)\n    at Socket.emit (events.js:182:13)\n    at addChunk (_stream_readable.js:283:12)\n    at readableAddChunk (_stream_readable.js:264:11)\n    at Socket.Readable.push (_stream_readable.js:219:10)\n    at TCP.onread (net.js:635:20)\n    --------------------\n    at Protocol._enqueue (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n    at Connection.query (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:200:25)\n    at getUserDetailsById (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:26:7)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3880:24\n    at replenish (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1011:17)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1016:9\n    at eachOfLimit (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1041:24)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1046:16\n    at _parallel (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3879:5)\n    at Object.series (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:4735:5)\n    at get (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:14:9)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:281:22\n    at param (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:354:14)\n    at param (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at Function.process_params (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:410:3)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:52:2\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)","code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlMessage":"Unknown column 'undefined' in 'where clause'","sqlState":"42S22","index":0,"sql":"SELECT user_id,password,user_name FROM user_details WHERE user_id = undefined","level":"info","timestamp":"2018-08-18T08:51:16.696Z"}
+{"level":"info","message":"Error In => getUserDetailsById","timestamp":"2018-08-18T08:51:16.697Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T08:51:28.460Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-18T08:51:28.460Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T08:51:28.461Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T08:51:28.461Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T08:51:28.462Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T08:51:28.462Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T08:51:28.462Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T08:51:28.463Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T08:51:28.463Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T08:51:52.329Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-18T08:51:52.329Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T08:51:52.330Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T08:51:52.330Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T08:51:52.330Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T08:51:52.331Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T08:51:52.331Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T08:51:52.332Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T08:51:52.333Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T08:53:11.302Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T08:53:11.303Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T08:53:11.305Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T08:53:11.305Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T08:53:14.636Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-18T08:53:14.636Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T08:53:14.637Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T08:53:14.638Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T08:53:14.639Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T08:53:14.640Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T08:53:14.640Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T08:53:14.640Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T08:53:14.642Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T08:53:14.644Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T08:53:14.853Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T08:53:14.910Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T08:53:15.589Z"}
+{"level":"error","message":"(node:11808) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T08:53:15.775Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T08:53:15.784Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T11:03:03.014Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T11:03:03.015Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T11:03:03.017Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T11:03:03.017Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T11:03:06.490Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-18T11:03:06.491Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T11:03:06.493Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T11:03:06.493Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T11:03:06.494Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T11:03:06.495Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:03:06.495Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:03:06.495Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T11:03:06.497Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T11:03:06.499Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T11:03:06.622Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T11:03:06.644Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T11:03:07.092Z"}
+{"level":"error","message":"(node:19272) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T11:03:07.267Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T11:03:07.274Z"}
+{"message":"ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'","stack":"Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'\n    at Query.Sequence._packetToError (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n    at Query.ErrorPacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:77:18)\n    at Protocol._parsePacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:278:23)\n    at Parser.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:91:28)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:502:10)\n    at Socket.emit (events.js:182:13)\n    at addChunk (_stream_readable.js:283:12)\n    at readableAddChunk (_stream_readable.js:264:11)\n    at Socket.Readable.push (_stream_readable.js:219:10)\n    at TCP.onread (net.js:635:20)\n    --------------------\n    at Protocol._enqueue (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n    at Connection.query (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:200:25)\n    at getUserDetailsById (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:26:7)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3880:24\n    at replenish (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1011:17)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1016:9\n    at eachOfLimit (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1041:24)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1046:16\n    at _parallel (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3879:5)\n    at Object.series (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:4735:5)\n    at get (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:14:9)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:52:2\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlMessage":"Unknown column 'undefined' in 'where clause'","sqlState":"42S22","index":0,"sql":"SELECT user_id,password,user_name FROM user_details WHERE user_id = undefined","level":"info","timestamp":"2018-08-18T11:03:07.294Z"}
+{"level":"info","message":"Error In => getUserDetailsById","timestamp":"2018-08-18T11:03:07.294Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T11:03:21.621Z"}
+{"level":"info","message":"/getUserDetailsById/777","timestamp":"2018-08-18T11:03:21.621Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T11:03:21.622Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T11:03:21.622Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T11:03:21.622Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:03:21.622Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:03:21.622Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T11:03:21.622Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T11:03:21.622Z"}
+{"message":"ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'","stack":"Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'\n    at Query.Sequence._packetToError (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n    at Query.ErrorPacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:77:18)\n    at Protocol._parsePacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:278:23)\n    at Parser.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:91:28)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:502:10)\n    at Socket.emit (events.js:182:13)\n    at addChunk (_stream_readable.js:283:12)\n    at readableAddChunk (_stream_readable.js:264:11)\n    at Socket.Readable.push (_stream_readable.js:219:10)\n    at TCP.onread (net.js:635:20)\n    --------------------\n    at Protocol._enqueue (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n    at Connection.query (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:200:25)\n    at getUserDetailsById (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:26:7)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3880:24\n    at replenish (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1011:17)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1016:9\n    at eachOfLimit (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1041:24)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1046:16\n    at _parallel (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3879:5)\n    at Object.series (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:4735:5)\n    at get (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:14:9)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:281:22\n    at param (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:354:14)\n    at param (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at Function.process_params (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:410:3)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:52:2\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)","code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlMessage":"Unknown column 'undefined' in 'where clause'","sqlState":"42S22","index":0,"sql":"SELECT user_id,password,user_name FROM user_details WHERE user_id = undefined","level":"info","timestamp":"2018-08-18T11:03:21.676Z"}
+{"level":"info","message":"Error In => getUserDetailsById","timestamp":"2018-08-18T11:03:21.676Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T11:10:53.127Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T11:10:53.128Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T11:10:53.129Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T11:10:53.130Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T11:10:56.936Z"}
+{"level":"info","message":"/getUserDetailsById/777","timestamp":"2018-08-18T11:10:56.937Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T11:10:56.938Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T11:10:56.938Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T11:10:56.939Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T11:10:56.940Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:10:56.940Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:10:56.940Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T11:10:56.942Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T11:10:56.943Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T11:10:57.068Z"}
+{"level":"error","message":"(node:4696) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T11:10:57.082Z"}
+{"level":"error","message":"Error: Cannot find module './api/userDetails/getUserDetails.js'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:594:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:520:25)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at routes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\Routes.js:19:5)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:62:25)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:46:3\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:284:7","timestamp":"2018-08-18T11:10:57.087Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T11:10:57.099Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T11:11:22.147Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T11:11:22.149Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T11:11:22.150Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T11:11:22.150Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T11:11:25.547Z"}
+{"level":"info","message":"/getUserDetailsById/777","timestamp":"2018-08-18T11:11:25.548Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T11:11:25.551Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T11:11:25.551Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T11:11:25.552Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T11:11:25.553Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:11:25.553Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:11:25.553Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T11:11:25.555Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T11:11:25.558Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T11:11:25.738Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T11:11:25.779Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T11:11:26.326Z"}
+{"level":"error","message":"(node:18436) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T11:11:26.506Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T11:11:26.513Z"}
+{"message":"ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'","stack":"Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'\n    at Query.Sequence._packetToError (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n    at Query.ErrorPacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:77:18)\n    at Protocol._parsePacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:278:23)\n    at Parser.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:91:28)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:502:10)\n    at Socket.emit (events.js:182:13)\n    at addChunk (_stream_readable.js:283:12)\n    at readableAddChunk (_stream_readable.js:264:11)\n    at Socket.Readable.push (_stream_readable.js:219:10)\n    at TCP.onread (net.js:635:20)\n    --------------------\n    at Protocol._enqueue (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n    at Connection.query (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:200:25)\n    at getUserDetailsById (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:26:7)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3880:24\n    at replenish (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1011:17)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1016:9\n    at eachOfLimit (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1041:24)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1046:16\n    at _parallel (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3879:5)\n    at Object.series (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:4735:5)\n    at get (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:14:9)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:281:22\n    at param (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:354:14)\n    at param (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at Function.process_params (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:410:3)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:52:2\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)","code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlMessage":"Unknown column 'undefined' in 'where clause'","sqlState":"42S22","index":0,"sql":"SELECT user_id,password,user_name FROM user_details WHERE user_id = undefined","level":"info","timestamp":"2018-08-18T11:11:26.516Z"}
+{"level":"info","message":"Error In => getUserDetailsById","timestamp":"2018-08-18T11:11:26.516Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T11:11:31.369Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-18T11:11:31.369Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T11:11:31.370Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T11:11:31.370Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T11:11:31.370Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:11:31.370Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:11:31.370Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T11:11:31.370Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T11:11:31.370Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T11:11:42.899Z"}
+{"level":"info","message":"/getUserDetailsById/123444","timestamp":"2018-08-18T11:11:42.900Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T11:11:42.900Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T11:11:42.900Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T11:11:42.900Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:11:42.900Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:11:42.900Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T11:11:42.900Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T11:11:42.901Z"}
+{"message":"ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'","stack":"Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'\n    at Query.Sequence._packetToError (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n    at Query.ErrorPacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:77:18)\n    at Protocol._parsePacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:278:23)\n    at Parser.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:91:28)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:502:10)\n    at Socket.emit (events.js:182:13)\n    at addChunk (_stream_readable.js:283:12)\n    at readableAddChunk (_stream_readable.js:264:11)\n    at Socket.Readable.push (_stream_readable.js:219:10)\n    at TCP.onread (net.js:635:20)\n    --------------------\n    at Protocol._enqueue (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n    at Connection.query (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:200:25)\n    at getUserDetailsById (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:26:7)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3880:24\n    at replenish (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1011:17)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1016:9\n    at eachOfLimit (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1041:24)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1046:16\n    at _parallel (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3879:5)\n    at Object.series (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:4735:5)\n    at get (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:14:9)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:281:22\n    at param (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:354:14)\n    at param (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at Function.process_params (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:410:3)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:52:2\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)","code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlMessage":"Unknown column 'undefined' in 'where clause'","sqlState":"42S22","index":0,"sql":"SELECT user_id,password,user_name FROM user_details WHERE user_id = undefined","level":"info","timestamp":"2018-08-18T11:11:42.913Z"}
+{"level":"info","message":"Error In => getUserDetailsById","timestamp":"2018-08-18T11:11:42.913Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T11:14:51.757Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T11:14:51.759Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T11:14:51.760Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T11:14:51.760Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T11:14:55.240Z"}
+{"level":"info","message":"/getUserDetailsById/123444","timestamp":"2018-08-18T11:14:55.241Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T11:14:55.243Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T11:14:55.243Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T11:14:55.245Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T11:14:55.246Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:14:55.246Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:14:55.246Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T11:14:55.248Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T11:14:55.251Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T11:14:55.428Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T11:14:55.467Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T11:14:56.255Z"}
+{"userId":"123444","level":"info","message":"","timestamp":"2018-08-18T11:14:56.439Z"}
+{"level":"error","message":"(node:11144) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T11:14:56.440Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T11:14:56.460Z"}
+{"message":"ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'","stack":"Error: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'\n    at Query.Sequence._packetToError (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n    at Query.ErrorPacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:77:18)\n    at Protocol._parsePacket (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:278:23)\n    at Parser.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:91:28)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:502:10)\n    at Socket.emit (events.js:182:13)\n    at addChunk (_stream_readable.js:283:12)\n    at readableAddChunk (_stream_readable.js:264:11)\n    at Socket.Readable.push (_stream_readable.js:219:10)\n    at TCP.onread (net.js:635:20)\n    --------------------\n    at Protocol._enqueue (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n    at Connection.query (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\mysql\\lib\\Connection.js:200:25)\n    at getUserDetailsById (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:27:7)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3880:24\n    at replenish (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1011:17)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1016:9\n    at eachOfLimit (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1041:24)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:1046:16\n    at _parallel (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:3879:5)\n    at Object.series (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\async\\dist\\async.js:4735:5)\n    at get (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\api\\userDetails\\getUserDetailsById.js:14:9)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:281:22\n    at param (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:354:14)\n    at param (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:365:14)\n    at Function.process_params (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:410:3)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\config\\main.js:52:2\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\NodeSample\\node_modules\\express\\lib\\router\\layer.js:95:5)","code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlMessage":"Unknown column 'undefined' in 'where clause'","sqlState":"42S22","index":0,"sql":"SELECT user_id,password,user_name FROM user_details WHERE user_id = undefined","level":"info","timestamp":"2018-08-18T11:14:56.505Z"}
+{"level":"info","message":"Error In => getUserDetailsById","timestamp":"2018-08-18T11:14:56.506Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T11:16:13.342Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T11:16:13.344Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T11:16:13.346Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T11:16:13.346Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T11:16:17.541Z"}
+{"level":"info","message":"/getUserDetailsById/123444","timestamp":"2018-08-18T11:16:17.542Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T11:16:17.544Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T11:16:17.545Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T11:16:17.546Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T11:16:17.547Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:16:17.547Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T11:16:17.547Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T11:16:17.549Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T11:16:17.551Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T11:16:17.677Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T11:16:17.700Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T11:16:18.182Z"}
+{"user_id":"123444","level":"info","message":"","timestamp":"2018-08-18T11:16:18.534Z"}
+{"level":"error","message":"(node:3084) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T11:16:18.536Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T11:16:18.593Z"}
