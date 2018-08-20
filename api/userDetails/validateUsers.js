@@ -1,9 +1,9 @@
 "use strict";
 var async = require("async");
 var sha1 = require("sha1");
-module.exports = get;
+module.exports = post;
 
-function get(req, res) {
+function post(req, res) {
   var box = {
     req: req,
     reqParams: req.params,
@@ -24,7 +24,7 @@ function validateUsers(box, nextFunc) {
     "SELECT * FROM user_details WHERE user_email_id = '" +
     box.reqBody.user_email_id +
     "' AND password = '" +
-    box.reqBody.password +
+    sha(box.reqBody.password) +
     "'";
   con.query(sql, function(err, result) {
     if (err) {
@@ -39,18 +39,40 @@ function validateUsers(box, nextFunc) {
       // box.resBody.value = result;
       // }
 
+      // console.info(result.length);
+      // if (result.length == "1") {
+      //   box.res.status(200).json({
+      //     status: "Authorized",
+      //     message: "Login Sucusses Full",
+      //     value: result
+      //   });
+      // } else {
+      //   box.res.status(401).json({
+      //     status: "Unauthorized",
+      //     message: "Login Failed,Please Enter Valid Details"
+      //   });
+      // }
+
       console.info(result.length);
-      if (result.length == "1") {
-        box.res.status(200).json({
-          status: "Authorized",
-          message: "Login Sucusses Full",
-          value: result
-        });
+      console.info(result);
+      if (result.length >= "1") {
+        // box.res.status(200).json({
+        //   status: 'Authorized',
+        //   message:"Login Sucusses Full",
+        //   value : result
+        // });
+        box.resBody.status = "Authorized";
+        box.resBody.message = "Login Sucusses Full";
+        box.resBody.value = result;
       } else {
-        box.res.status(401).json({
-          status: "Unauthorized",
-          message: "Login Failed,Please Enter Valid Details"
-        });
+        // box.res.status(401).json({
+        //   status: 'Unauthorized',
+        //   message:"Login Failed ! Please Enter Valid Details"
+        // });
+        global.validate_api = false;
+        box.res.status(401);
+        box.resBody.status = "Unauthorized";
+        box.resBody.message = "Login Failed ! Please Enter Valid Details";
       }
     }
     return nextFunc();

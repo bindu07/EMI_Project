@@ -18,7 +18,7 @@ function routes(app) {
     "/getUserDetailsById",
     require("./api/userDetails/getAllUserDetails.js")
   );
-  app.get(
+  app.post(
     "/validateUserDetails",
     require("./api/userDetails/validateUsers.js")
   );

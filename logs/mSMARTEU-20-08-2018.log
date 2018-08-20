@@ -1,0 +1,371 @@
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-20T08:28:24.318Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-20T08:28:24.342Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-20T08:28:24.347Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-20T08:28:24.348Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T08:35:11.630Z"}
+{"level":"info","message":"/validateConsumer","timestamp":"2018-08-20T08:35:11.630Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T08:35:11.638Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T08:35:11.639Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T08:35:11.641Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T08:35:11.642Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T08:35:11.643Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T08:35:11.643Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T08:35:11.645Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T08:35:11.654Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T08:35:12.100Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-20T08:35:12.313Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-20T08:35:14.946Z"}
+{"level":"info","message":"SELECT U.user_id,U.email_id,U.mobile_number,U.user_role,U.date_of_birth,U.agency_id,CONCAT(U.first_name,'_',U.last_name) as username,SD.sub_division_name,AG.name as agency_name FROM users as U LEFT JOIN consumer_accounts CA ON CA.user_id = U.user_id LEFT JOIN  sub_division as SD ON SD.id = U.sub_division_id LEFT JOIN bu_mapping_agency AS BMA ON BMA.sub_division_id = SD.id LEFT JOIN agencies AG ON AG.id = BMA.agency_id AND AG.id = U.agency_id WHERE CA.consumer_account_number = '28' AND U.password = '0a57cb53ba59c46fc4b692527a38a87c78d84028' AND U.status = 'active' GROUP BY U.user_id","timestamp":"2018-08-20T08:35:15.961Z"}
+{"level":"error","message":"(node:8744) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-20T08:35:15.965Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-20T08:35:15.983Z"}
+{"meta":0,"level":"info","message":"","timestamp":"2018-08-20T08:35:16.077Z"}
+[]
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T08:43:00.489Z"}
+{"level":"info","message":"/validateConsumer","timestamp":"2018-08-20T08:43:00.489Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T08:43:00.490Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T08:43:00.490Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T08:43:00.491Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T08:43:00.491Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T08:43:00.492Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T08:43:00.492Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T08:43:00.493Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T08:44:28.190Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T08:44:28.191Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T08:44:28.191Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T08:44:28.192Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T08:44:28.192Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T08:44:28.193Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T08:44:28.193Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T08:44:28.193Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T08:44:28.194Z"}
+{"message":"ER_NO_SUCH_TABLE: Table 'ssu_local.user_details' doesn't exist","stack":"Error: ER_NO_SUCH_TABLE: Table 'ssu_local.user_details' doesn't exist\n    at Query.Sequence._packetToError (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\mysql\\lib\\protocol\\sequences\\Sequence.js:47:14)\n    at Query.ErrorPacket (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\mysql\\lib\\protocol\\sequences\\Query.js:77:18)\n    at Protocol._parsePacket (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\mysql\\lib\\protocol\\Protocol.js:278:23)\n    at Parser.write (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\mysql\\lib\\protocol\\Parser.js:76:12)\n    at Protocol.write (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\mysql\\lib\\protocol\\Protocol.js:38:16)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\mysql\\lib\\Connection.js:91:28)\n    at Socket.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\mysql\\lib\\Connection.js:502:10)\n    at Socket.emit (events.js:182:13)\n    at addChunk (_stream_readable.js:283:12)\n    at readableAddChunk (_stream_readable.js:264:11)\n    at Socket.Readable.push (_stream_readable.js:219:10)\n    at TCP.onread (net.js:635:20)\n    --------------------\n    at Protocol._enqueue (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\mysql\\lib\\protocol\\Protocol.js:144:48)\n    at Connection.query (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\mysql\\lib\\Connection.js:200:25)\n    at validateUsers (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\api\\userDetails\\validateUsers.js:29:7)\n    at C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\async\\dist\\async.js:3880:24\n    at replenish (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\async\\dist\\async.js:1011:17)\n    at C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\async\\dist\\async.js:1016:9\n    at eachOfLimit (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\async\\dist\\async.js:1041:24)\n    at C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\async\\dist\\async.js:1046:16\n    at _parallel (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\async\\dist\\async.js:3879:5)\n    at Object.series (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\async\\dist\\async.js:4735:5)\n    at get (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\api\\userDetails\\validateUsers.js:15:9)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\express\\lib\\router\\route.js:137:13)\n    at Route.dispatch (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\express\\lib\\router\\route.js:112:3)\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\express\\lib\\router\\index.js:281:22\n    at Function.process_params (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\express\\lib\\router\\index.js:335:12)\n    at next (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\express\\lib\\router\\index.js:275:10)\n    at C:\\Users\\Admin\\BinduProj Backend\\emibackend\\config\\main.js:52:2\n    at Layer.handle [as handle_request] (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\express\\lib\\router\\index.js:317:13)\n    at C:\\Users\\Admin\\BinduProj Backend\\emibackend\\node_modules\\express\\lib\\router\\index.js:284:7","code":"ER_NO_SUCH_TABLE","errno":1146,"sqlMessage":"Table 'ssu_local.user_details' doesn't exist","sqlState":"42S02","index":0,"sql":"SELECT * FROM user_details WHERE user_email_id = 'undefined' AND password = 'undefined'","level":"info","timestamp":"2018-08-20T08:44:28.214Z"}
+{"level":"info","message":"Error In => validateUsers","timestamp":"2018-08-20T08:44:28.214Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-20T08:46:05.956Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-20T08:46:05.958Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-20T08:46:05.960Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-20T08:46:05.961Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T08:46:11.018Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T08:46:11.019Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T08:46:11.020Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T08:46:11.020Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T08:46:11.021Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T08:46:11.022Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T08:46:11.022Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T08:46:11.022Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T08:46:11.024Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T08:46:11.025Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T08:46:11.151Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-20T08:46:11.183Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-20T08:46:11.702Z"}
+{"level":"error","message":"(node:14832) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-20T08:46:11.911Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-20T08:46:11.933Z"}
+{"meta":0,"level":"info","message":"","timestamp":"2018-08-20T08:46:11.936Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-20T08:47:33.233Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-20T08:47:33.235Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-20T08:47:33.236Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-20T08:47:33.237Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T08:47:36.250Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T08:47:36.251Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T08:47:36.253Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T08:47:36.254Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T08:47:36.256Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T08:47:36.257Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T08:47:36.257Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T08:47:36.257Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T08:47:36.259Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T08:47:36.262Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T08:47:36.402Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-20T08:47:36.429Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-20T08:47:36.939Z"}
+{"level":"error","message":"(node:2856) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-20T08:47:37.137Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-20T08:47:37.145Z"}
+{"meta":0,"level":"info","message":"","timestamp":"2018-08-20T08:47:37.149Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-20T08:52:34.565Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-20T08:52:34.567Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-20T08:52:34.569Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-20T08:52:34.569Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T08:52:38.763Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T08:52:38.764Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T08:52:38.766Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T08:52:38.766Z"}
+{"meta":false,"level":"info","message":"","timestamp":"2018-08-20T08:52:38.768Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T08:53:36.416Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T08:53:36.417Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T08:53:36.417Z"}
+{"meta":false,"level":"info","message":"","timestamp":"2018-08-20T08:53:36.417Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T08:53:44.527Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T08:53:44.528Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T08:53:44.528Z"}
+{"meta":false,"level":"info","message":"","timestamp":"2018-08-20T08:53:44.529Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T08:54:05.047Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T08:54:05.047Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T08:54:05.047Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T08:54:05.048Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T08:54:05.049Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T08:54:05.049Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T08:54:05.050Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T08:54:05.052Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T08:54:05.054Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T08:54:05.204Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-20T08:54:05.240Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-20T08:54:05.992Z"}
+{"level":"error","message":"(node:17132) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-20T08:54:06.210Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-20T08:54:06.228Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T08:54:17.676Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T08:54:17.677Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T08:54:17.677Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T08:54:17.678Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T08:54:17.678Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T08:54:17.679Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T08:54:17.679Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T08:54:17.679Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T08:54:17.680Z"}
+{"meta":0,"level":"info","message":"","timestamp":"2018-08-20T08:54:17.696Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-20T08:59:33.740Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-20T08:59:33.742Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-20T08:59:33.744Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-20T08:59:33.744Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T09:00:30.796Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T09:00:30.796Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T09:00:30.799Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T09:00:30.799Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T09:00:30.801Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T09:00:30.802Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T09:00:30.803Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T09:00:30.803Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T09:00:30.805Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T09:00:30.807Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T09:00:30.956Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-20T09:00:30.987Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-20T09:00:31.544Z"}
+{"level":"error","message":"(node:5584) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-20T09:00:31.738Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-20T09:00:31.758Z"}
+{"meta":0,"level":"info","message":"","timestamp":"2018-08-20T09:00:31.762Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-20T09:00:39.574Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-20T09:00:39.576Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-20T09:00:39.578Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-20T09:00:39.578Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T09:50:48.167Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T09:50:48.169Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T09:50:48.170Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T09:50:48.171Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T09:50:48.172Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T09:50:48.173Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T09:50:48.173Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T09:50:48.174Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T09:50:48.176Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T09:50:48.179Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T09:50:48.328Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-20T09:50:48.358Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-20T09:50:48.856Z"}
+{"level":"error","message":"(node:16424) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-20T09:50:49.047Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-20T09:50:49.066Z"}
+{"meta":0,"level":"info","message":"","timestamp":"2018-08-20T09:50:49.070Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-20T09:50:53.751Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-20T09:50:53.753Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-20T09:50:53.755Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-20T09:50:53.755Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T09:50:56.579Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T09:50:56.580Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T09:50:56.582Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T09:50:56.582Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T09:50:56.583Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T09:50:56.584Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T09:50:56.584Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T09:50:56.584Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T09:50:56.586Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T09:50:56.588Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T09:50:56.727Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-20T09:50:56.755Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-20T09:50:57.245Z"}
+{"level":"error","message":"(node:14988) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-20T09:50:57.432Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-20T09:50:57.441Z"}
+{"meta":0,"level":"info","message":"","timestamp":"2018-08-20T09:50:57.444Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-20T09:52:15.794Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-20T09:52:15.795Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-20T09:52:15.797Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-20T09:52:15.797Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T09:52:23.932Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T09:52:23.932Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T09:52:23.934Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T09:52:23.934Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T09:52:23.935Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T09:52:23.936Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T09:52:23.936Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T09:52:23.936Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T09:52:23.937Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T09:52:23.939Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T09:52:24.063Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-20T09:52:24.097Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-20T09:52:24.581Z"}
+{"level":"error","message":"(node:14648) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-20T09:52:24.808Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-20T09:52:24.870Z"}
+{"level":"info","message":"1","timestamp":"2018-08-20T09:52:24.883Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-20T09:53:07.638Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-20T09:53:07.640Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-20T09:53:07.641Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-20T09:53:07.642Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T09:53:10.397Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T09:53:10.398Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T09:53:10.399Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T09:53:10.400Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T09:53:10.401Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T09:53:10.402Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T09:53:10.402Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T09:53:10.402Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T09:53:10.404Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T09:53:10.405Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T09:53:10.551Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-20T09:53:10.593Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-20T09:53:11.076Z"}
+{"level":"error","message":"(node:19316) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-20T09:53:11.318Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-20T09:53:11.336Z"}
+{"level":"info","message":"1","timestamp":"2018-08-20T09:53:11.341Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-20T09:55:27.101Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-20T09:55:27.102Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-20T09:55:27.104Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-20T09:55:27.104Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T09:55:35.435Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T09:55:35.436Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T09:55:35.438Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T09:55:35.438Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T09:55:35.439Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T09:55:35.440Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T09:55:35.440Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T09:55:35.440Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T09:55:35.443Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T09:55:35.445Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T09:55:35.594Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-20T09:55:35.624Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-20T09:55:36.092Z"}
+{"level":"error","message":"(node:11496) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-20T09:55:36.288Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-20T09:55:36.311Z"}
+{"level":"info","message":"1","timestamp":"2018-08-20T09:55:36.316Z"}
+[{"user_id":1234,"password":"test","user_name":"bindu","user_email_id":"bindu.priya07@gmail.com"}]
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T09:55:53.076Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-20T09:55:53.077Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T09:55:53.077Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T09:55:53.078Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T09:55:53.078Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T09:55:53.078Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T09:55:53.079Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T09:55:53.079Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T09:55:53.080Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T10:06:34.448Z"}
+{"level":"info","message":"/getUserDetailsById","timestamp":"2018-08-20T10:06:34.448Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T10:06:34.449Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T10:06:34.450Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T10:06:34.450Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T10:06:34.451Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T10:06:34.451Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T10:06:34.452Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T10:06:34.452Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T10:06:51.470Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T10:06:51.471Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T10:06:51.472Z"}
+{"meta":false,"level":"info","message":"","timestamp":"2018-08-20T10:06:51.472Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-20T10:07:24.964Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-20T10:07:24.966Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-20T10:07:24.967Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-20T10:07:24.968Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T10:07:27.577Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T10:07:27.578Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T10:07:27.580Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T10:07:27.580Z"}
+{"meta":false,"level":"info","message":"","timestamp":"2018-08-20T10:07:27.581Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-20T10:07:44.665Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-20T10:07:44.667Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-20T10:07:44.668Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-20T10:07:44.669Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T10:07:49.502Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T10:07:49.503Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T10:07:49.504Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T10:07:49.505Z"}
+{"meta":false,"level":"info","message":"","timestamp":"2018-08-20T10:07:49.506Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T10:07:51.553Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T10:07:51.553Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T10:07:51.553Z"}
+{"meta":false,"level":"info","message":"","timestamp":"2018-08-20T10:07:51.553Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T10:07:58.779Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T10:07:58.779Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T10:07:58.779Z"}
+{"meta":false,"level":"info","message":"","timestamp":"2018-08-20T10:07:58.780Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T10:08:09.621Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T10:08:09.622Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T10:08:09.622Z"}
+{"meta":false,"level":"info","message":"","timestamp":"2018-08-20T10:08:09.623Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T10:08:17.912Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T10:08:17.913Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T10:08:17.913Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T10:08:17.913Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T10:08:17.915Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T10:08:17.915Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T10:08:17.915Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T10:08:17.918Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T10:08:17.920Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T10:08:18.118Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-20T10:08:18.181Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-20T10:08:18.791Z"}
+{"level":"error","message":"(node:9136) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-20T10:08:18.978Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-20T10:08:18.986Z"}
+{"level":"info","message":"1","timestamp":"2018-08-20T10:08:18.991Z"}
+[{"user_id":1234,"password":"test","user_name":"bindu","user_email_id":"bindu.priya07@gmail.com"}]
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T10:08:26.973Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T10:08:26.973Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T10:08:26.974Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T10:08:26.974Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T10:08:26.975Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T10:08:26.975Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T10:08:26.975Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T10:08:26.976Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T10:08:26.976Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-20T10:08:46.112Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-20T10:08:46.114Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-20T10:08:46.116Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-20T10:08:46.116Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T10:08:54.894Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T10:08:54.894Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T10:08:54.896Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T10:08:54.896Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T10:08:54.897Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T10:08:54.898Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T10:08:54.898Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T10:08:54.898Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T10:08:54.899Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T10:08:54.901Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T10:08:55.034Z"}
+{"level":"error","message":"(node:11020) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-20T10:08:55.057Z"}
+{"level":"error","message":"ReferenceError: get is not defined\n    at Object.<anonymous> (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\api\\userDetails\\validateUsers.js:4:18)\n    at Module._compile (internal/modules/cjs/loader.js:702:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)\n    at Module.load (internal/modules/cjs/loader.js:612:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:543:3)\n    at Module.require (internal/modules/cjs/loader.js:650:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at routes (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\Routes.js:23:5)\n    at loadRoutes (C:\\Users\\Admin\\BinduProj Backend\\emibackend\\config\\main.js:62:25)","timestamp":"2018-08-20T10:08:55.058Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-20T10:08:55.079Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-20T10:09:22.049Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-20T10:09:22.051Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-20T10:09:22.052Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-20T10:09:22.053Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T10:09:28.823Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T10:09:28.825Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T10:09:28.830Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T10:09:28.830Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T10:09:28.833Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T10:09:28.835Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T10:09:28.838Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T10:09:28.838Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T10:09:28.841Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-20T10:09:28.843Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T10:09:29.102Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-20T10:09:29.165Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-20T10:09:29.962Z"}
+{"level":"error","message":"(node:11292) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-20T10:09:30.184Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-20T10:09:30.203Z"}
+{"level":"info","message":"1","timestamp":"2018-08-20T10:09:30.208Z"}
+[{"user_id":1234,"password":"test","user_name":"bindu","user_email_id":"bindu.priya07@gmail.com"}]
+{"level":"info","message":" Cors ","timestamp":"2018-08-20T11:17:48.896Z"}
+{"level":"info","message":"/validateUserDetails","timestamp":"2018-08-20T11:17:48.898Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-20T11:17:48.900Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-20T11:17:48.901Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-20T11:17:48.901Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T11:17:48.902Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-20T11:17:48.902Z"}
+{"level":"info","message":"true","timestamp":"2018-08-20T11:17:48.903Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-20T11:17:48.904Z"}
+{"level":"info","message":"1","timestamp":"2018-08-20T11:17:49.028Z"}
+[{"user_id":1234,"password":"test","user_name":"bindu","user_email_id":"bindu.priya07@gmail.com"}]
