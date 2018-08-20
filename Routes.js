@@ -18,6 +18,10 @@ function routes(app) {
     "/getUserDetailsById",
     require("./api/userDetails/getAllUserDetails.js")
   );
+  app.get(
+    "/validateUserDetails",
+    require("./api/userDetails/validateUsers.js")
+  );
   /*End Of Bindu's Emi Apis*/
 
   /* <==== Start States API ====> */

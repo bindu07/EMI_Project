@@ -638,3 +638,23 @@
 {"user_id":"123444","level":"info","message":"","timestamp":"2018-08-18T11:16:18.534Z"}
 {"level":"error","message":"(node:3084) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T11:16:18.536Z"}
 {"level":"info","message":"Database Connected!","timestamp":"2018-08-18T11:16:18.593Z"}
+{"level":"info","message":"log's configured successfully","timestamp":"2018-08-18T14:36:08.289Z"}
+{"level":"info","message":"Here is your first log","timestamp":"2018-08-18T14:36:08.291Z"}
+{"level":"info","message":"Base URL http://localhost:3500","timestamp":"2018-08-18T14:36:08.293Z"}
+{"level":"info","message":"API accessing port 3500","timestamp":"2018-08-18T14:36:08.293Z"}
+{"level":"info","message":" Cors ","timestamp":"2018-08-18T14:36:12.025Z"}
+{"level":"info","message":"/getUserDetailsById/123444","timestamp":"2018-08-18T14:36:12.026Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T14:36:12.028Z"}
+{"level":"info","message":"validateCsrf function","timestamp":"2018-08-18T14:36:12.028Z"}
+{"level":"info","message":"CSRF TOKEN FROM API REQUEST => QUNNJmFiaGFydGVjaA==","timestamp":"2018-08-18T14:36:12.030Z"}
+{"level":"info","message":"QUNNJmFiaGFydGVjaA== encoding to Ascii is ACM&abhartech","timestamp":"2018-08-18T14:36:12.069Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T14:36:12.069Z"}
+{"level":"info","message":"ACM&abhartech","timestamp":"2018-08-18T14:36:12.070Z"}
+{"level":"info","message":"true","timestamp":"2018-08-18T14:36:12.071Z"}
+{"level":"info","message":"Header validation Initilized","timestamp":"2018-08-18T14:36:12.073Z"}
+{"level":"info","message":"Configuring Routes","timestamp":"2018-08-18T14:36:12.339Z"}
+{"level":"info","message":"Random String Generation ","timestamp":"2018-08-18T14:36:12.470Z"}
+{"level":"info","message":"Send SMS Intitiated","timestamp":"2018-08-18T14:36:14.600Z"}
+{"user_id":"123444","level":"info","message":"","timestamp":"2018-08-18T14:36:15.474Z"}
+{"level":"error","message":"(node:14300) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.","timestamp":"2018-08-18T14:36:15.477Z"}
+{"level":"info","message":"Database Connected!","timestamp":"2018-08-18T14:36:15.511Z"}

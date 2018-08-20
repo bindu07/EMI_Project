@@ -20,7 +20,7 @@ function get(req, res) {
 function getUserDetailsById(box, nextFunc) {
   var whoAmI = getUserDetailsById.name;
   console.info(box.reqParams);
-  var sql = "SELECT user_id,password,user_name FROM user_details";
+  var sql = "SELECT user_id,password,user_name,user_email_id FROM user_details";
   //   sql +=
   //     "LEFT JOIN states as s ON s.id = u.state_id LEFT JOIN countries as c ON c.id = u.country_id";
   sql += " WHERE user_id = " + box.reqParams.user_id;
